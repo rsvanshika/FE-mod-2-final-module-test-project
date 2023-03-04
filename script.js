@@ -132,7 +132,7 @@ function showAllPosts(){
         <button onclick="deletePost(${blog.id})">Delete Post</button>
         </div>
         
-        <div> ${blog.createdAt}  </div>
+        <div class="timing"> ${blog.createdAt}  </div>
         </div>
         </div>
         `;

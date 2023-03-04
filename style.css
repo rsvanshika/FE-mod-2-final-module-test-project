@@ -7,43 +7,38 @@
 body{
     width:100%;
     position:relative;
+    background-color: bisque;
     
 }
 .navbar{
     width:100%;
-    margin-top: 15px;
+    margin: 20px auto;
    
     display: flex;
     justify-content: space-between;
     align-items:center ;
-    padding: 0 5vw;
+    /* padding: 0 3vw; */
     background-color: #fff;
 
 }
 .navbar img{
-    margin-left: -33px;
+    margin-left: 10px;
 
 }
-.link-container{
-    display: flex;
-    list-style: none;
-}
 
-.link-items a{
-    padding: 10px;
-    margin-left:10px ;
-    text-decoration: none;
-    color: black;
-}
+
 
 .create-blog{
     border: none;
     background-color: white;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
 
 }
 .header{
-    margin-top:60px;
+    margin:20px auto;
     width:100%;
     height: 50vh;
     background: url("BG.jpeg");
@@ -165,18 +160,26 @@ button{
     flex-direction: column;
     gap:10px;
     margin:0 10px;
+    background-color: rgb(254, 151, 151);
 }
 
 .titleName{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 35px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
+}
+.DescName{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(56, 55, 55);
 }
 .btnTime{
     display: flex;
     justify-content: space-between;
 }
-
+.timing{
+    color: rgb(89, 86, 86);
+}
 
 /* ---media query---- */
 @media screen and (max-width: 768px) {
@@ -242,4 +245,36 @@ button{
         ge
     } */
     
+  }
+
+
+  /* ----footer---- */
+
+  .footer {
+    margin-top: 20px;
+    width:100%;
+    height: 90px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fa-brands{
+    font-size: 40px;
+    margin-right: 20px;
+
+  }
+  .footer img{
+    padding: 20px;
+    width:10%;
+  
+    display: inline-block;
+    /* align-items: center; */
+    
+  }
+  .footer .copyright{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 20px;
+
   }
