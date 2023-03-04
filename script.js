@@ -28,9 +28,6 @@ function cancelBlog() {
     modal.classList.add('hide');
 }
 
-function abc(){
-    alert("hiiii");
-}
 
 
 
@@ -42,6 +39,7 @@ closeEl.addEventListener('click',cancelBlog)
 // editButton.addEventListener('click',abc)
 
 function createPost(){
+    // body.classList.add('opac');
     const title = document.getElementById("topic").value;
     const description = document.getElementById("description").value;
     const now = new Date();
@@ -75,7 +73,7 @@ function editPost(id){
     document.getElementById("edit-post-button").setAttribute("data", id);
     document.getElementById("delete-post-button").setAttribute("data", id);
 }
-
+// -------to save edited post (updation)------
 function saveEditPost() {
     const id = Number(document.getElementById("edit-post-button").getAttribute("data"));
     const title = document.getElementById("edit-topic").value;
@@ -96,7 +94,7 @@ function saveEditPost() {
     document.getElementById("topic").value = "";
     document.getElementById("description").value = "";
 }
-
+// ------for deleting post----
 function deletePost(id){
     let blogId = id;
 
@@ -109,12 +107,14 @@ function deletePost(id){
     showAllPosts();
 
 }
+// ----close button function-------
 function closebtn()
 {
    
     modalEdit.classList.add('hide');
     showAllPosts();
 }
+// -----to show the posts-------
 function showAllPosts(){
     const showPostWrapper = document.getElementById("showPost");
 
